@@ -65,7 +65,6 @@ const Carousel = ()=> {
   const settings = {
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
-    lazyLoad: 'ondemand',
     className: "center",
     centerMode: true,
     arrows:true,
