@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from '../../assets/images/Footer/logo.svg'
-import facebook from '../../assets/images/Footer/facebook.svg'
-import linkedin from '../../assets/images/Footer/linkedin.svg'
-import twitter from '../../assets/images/Footer/twitter.svg'
-import instagram from '../../assets/images/Footer/instagram.svg'
+import logo from '../../../../assets/images/static/iso-fruits/Footer/logo.svg'
+import facebook from '../../../../assets/images/static/iso-fruits/Footer/facebook.svg'
+import linkedin from '../../../../assets/images/static/iso-fruits/Footer/linkedin.svg'
+import twitter from '../../../../assets/images/static/iso-fruits/Footer/twitter.svg'
+import instagram from '../../../../assets/images/static/iso-fruits/Footer/instagram.svg'
 import Link from 'next/link'
 
 const FooterTop = () => {
