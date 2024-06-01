@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import banana from '../../assets/images/Home/isolatedBanana.png'
-import triangle from '../../assets/images/Home/triangleGradient.png'
+import banana from '../../../../assets/images/static/iso-fruits/bottom-section/isolatedBanana.png'
+import triangle from '../../../../assets/images/static/iso-fruits/bottom-section/triangleGradient.png'
 
 
 const IsolatedBanana = () => {

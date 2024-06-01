@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "../../assets/images/header/logo.svg";
-import hamburger from "../../assets/images/header/burger-menu-svgrepo-com.svg";
+import logo from "../../../../assets/images/static/iso-fruits/header/logo.svg";
+import hamburger from "../../../../assets/images/static/iso-fruits/header/burger-menu-svgrepo-com.svg";
 
 const Header = () => {
   const [isopen, setIsopen] = useState(false);
