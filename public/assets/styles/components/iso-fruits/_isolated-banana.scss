@@ -14,6 +14,9 @@
 
         @include flex(center, center, column);
         gap: 4rem;
+        @include tablet{
+            gap: 0rem;
+        }
         
         max-width: 1080px;
         margin: 0 auto;
@@ -34,6 +37,18 @@
             text-transform: uppercase;
 
             box-shadow: 0px 4px 4px 0px #00000040;
+            @include tablet{
+                font-size: 32px;
+                line-height: 32px;
+                padding: 0.5rem 3rem;
+                margin: 0;
+            }
+            @include mobile{
+                 padding: 0.5rem 1.5rem;
+                font-size: 28px;
+                line-height: 28px;
+                font-weight: 700;
+            }
         }
 
         .description{
@@ -48,6 +63,16 @@
             text-transform: capitalize;
 
             color: #001B78;
+
+            @include tablet{
+                margin-top: 1.5rem;
+                font-size: 18px;
+                line-height: 32px;
+                width: 100%;
+                padding: 0;
+
+            }
+
         }
 
         .img-container{

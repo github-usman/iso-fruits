@@ -12,8 +12,7 @@ const Header = () => {
         alt="iso Fruits"
         objectFit="cover"
         objectPosition="center"
-        height={88}
-        width={222}
+        className="iso-fruits-logo"
       />
       <div className="navigation-links">
         <nav>

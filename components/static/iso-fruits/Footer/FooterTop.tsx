@@ -16,7 +16,7 @@ const FooterTop = () => {
           <div className="links-container">
 
             <div className='img-container'>
-              <Image src={logo} alt=''/>
+              <Image src={logo} alt='iso-logo' loading='lazy'/>
             </div>
             <div className='links'>
               <Link href='/'>Banana Product</Link>
@@ -29,16 +29,16 @@ const FooterTop = () => {
           <div className="socials-container">
             <div className="socials">
               <a href='https://www.facebook.com/' target='_blank' rel='noreferrer noopener'>
-                <Image src={facebook} alt=''/>
+                <Image src={facebook} alt='fb-logo' />
               </a>
               <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer noopener'>
-                <Image src={linkedin} alt=''/>
+                <Image src={linkedin} alt='linkedin-logo'/>
               </a>
               <a href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'>
-                <Image src={instagram} alt=''/>
+                <Image src={instagram} alt='insta-log'/>
               </a>
               <a href='https://www.twitter.com/' target='_blank' rel='noreferrer noopener'>
-                <Image src={twitter} alt=''/>
+                <Image src={twitter} alt='twitter-x-log'/>
               </a>
             </div>
 

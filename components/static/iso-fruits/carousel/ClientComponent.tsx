@@ -10,7 +10,7 @@ const ClientComponent: React.FC<imgProps> = ({ items}) => {
   return (
     <div className="client-testimonial-cards">
       <div className="cardss">
-        <Image src={items} alt="avatar-client" className="img-tems" />
+        <Image src={items} alt="avatar-client" className="img-tems"  loading='lazy'/>
       </div>
     </div>
   );

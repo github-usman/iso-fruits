@@ -2,10 +2,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     max-width: 1080px;
     margin: auto;
     padding: 5px 33px;
+    
+    .iso-fruits-logo{
+        width: 222px;
+        height: 88px;
+        
+
+        @include mobile{
+            max-height:100%;
+            max-width: 222px;
+            width:calc(100% - 30px);
+
+        }
+       
+    }
+    @include mobile{
+        padding: 5px 1px;
+        
+    }
     .navigation-links{
         display: flex;
         align-items: center;
