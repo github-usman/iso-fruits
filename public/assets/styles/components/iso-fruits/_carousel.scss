@@ -4,6 +4,7 @@
   margin: auto;
   .container {
     padding-top: 86px;
+    padding-bottom: 30px;
     background: radial-gradient(circle at 50% 70%, #ffc89b 0%, #ffeea154 30%, #ffff 80%);
 
     @include mobile{
