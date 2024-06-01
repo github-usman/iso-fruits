@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 1080px;
     margin: auto;
-    padding: 5px 33px;
+    padding: 5px 0px;
     
     .iso-fruits-logo{
         width: 222px;
@@ -36,7 +36,7 @@
                 display: flex;
                 align-items: center;
                 gap: 40px;
-                li{
+                li {
                     padding: 5px 0px;
                     line-height: 32.59px;
                     font-size: 23px;
@@ -44,11 +44,31 @@
                     font-family: Roboto;
                     color: #001B78;
                     border: 1px solid transparent;
+                    border-bottom-width: 0px;
                     cursor: pointer;
-                    &:hover{
-                        border-bottom: 1px solid #333333;
+                    position: relative;
+                  
+                    &:hover::after {
+                      width: 100%;
                     }
-                }
+                  
+                    &::after {
+                      content: '';
+                      position: absolute;
+                      width: 0;
+                      height: 1px;
+                      bottom: 0;
+                      left: 0;
+                      background-color: #333333;
+                      transition: width 0.2s ease-in;
+                    }
+                  
+                    a {
+                      text-decoration: none;
+                      list-style: none;
+                      color: inherit;
+                    }
+                  }
             }
         }
     }
