@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../assets/images/header/logo.svg";
+import hamburger from "../../assets/images/header/burger-menu-svgrepo-com.svg";
 
 const Header = () => {
   const [isopen, setIsopen] = useState(false);
@@ -38,9 +39,7 @@ const Header = () => {
               setIsopen(true);
             }}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <Image src={hamburger} alt="Hamburger" className="hamburger" />
           </div>
         )}
       </div>

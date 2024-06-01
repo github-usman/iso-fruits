@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    max-width: 1080px;
+    margin: auto;
     padding: 5px 33px;
     .navigation-links{
         display: flex;
@@ -34,23 +36,10 @@
     }
     .icons{
         div{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            align-items: flex-start;
             cursor: pointer;
-            span{
-                height: 2.5px;
-                background-color: #393939;
-                &:first-child{
-                    width: 9px;
-                }
-                &:nth-child(2){
-                    width: 16px;
-                }
-                &:last-child{
-                    width: 12px;
-                }
+            .hamburger{
+                width: 26px;
+                height: auto;
             }
         }
     }
