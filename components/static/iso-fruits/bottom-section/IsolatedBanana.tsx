@@ -10,7 +10,7 @@ const IsolatedBanana = () => {
     <div className='isolated-banana'>
       <div className="container">
       <Image src={triangle} alt='Triangle2' className='triangle2-img'/>
-      <Image src={golden_isolated_banana} alt='golderIsolated banana' className='banana-img'/>
+      <Image src={golden_isolated_banana} alt='golderIsolated banana' className='golden-banana-img'/>
         <h2 className='heading'>Isolated Banana</h2>
         <p className='description'>Bananas are rich in essential vitamins and minerals like potassium, vitamin C, and vitamin B6. They are also a good source of fiber and antioxidants. Incorporating bananas into your diet can support heart health, aid digestion, and boost energy levels.</p>
         <div className='img-container'>

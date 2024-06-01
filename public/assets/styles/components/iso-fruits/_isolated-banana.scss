@@ -6,6 +6,12 @@
     
     .container{
 
+        .golden-banana-img{
+            max-width: 534px;
+            width: 100% ;
+            height: auto;    
+        }
+
         @include flex(center, center, column);
         gap: 4rem;
         
@@ -53,6 +59,7 @@
                 max-width: 95%;
                 height: auto;
             }
+            
             position: relative;
             .triangle1-img{
                 position: absolute;
@@ -64,7 +71,7 @@
             }
         }
 
-
+          
         .triangle2-img{
             transform: translateY(-30%) rotate(36deg) scale(0.95);
 
