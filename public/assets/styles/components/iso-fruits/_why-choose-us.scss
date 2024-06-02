@@ -1,0 +1,66 @@
+.iso-fruites-why-choose-us{
+    max-width: 980px;
+    width: 99%;
+    margin: -30px auto 95px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 22px;
+
+        img{
+            width: 81px;
+            height: 68.69px;
+
+
+        }
+        h2{
+            color: #FDB236;
+            font-family: Nunito;
+            font-size: 47px;
+            font-weight: 800;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: left;
+            text-transform: capitalize;
+        }
+    }
+
+    .list-container{
+      
+        div{
+            margin-top: 63px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            h5{
+                font-family: Roboto;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: left;
+                color: #001B78;
+                text-transform: capitalize;
+
+            }
+            p{
+                font-family: Roboto;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: center;
+                color: #001B78;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+}

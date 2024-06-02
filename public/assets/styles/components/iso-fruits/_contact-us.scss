@@ -1,0 +1,46 @@
+.iso-fruites-contact-us{
+    max-width: 980px;
+    width: 99%;
+    margin: 148px auto 169px auto;
+
+    h5{
+        font-family: Roboto;
+        font-size: 31px;
+        font-weight: 500;
+        line-height: 38px;
+        text-align: center;
+        color: #001B78;
+        margin-bottom: 47px;
+    }
+    .email-container,.call-container{
+    
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+        color: #001B78;
+        font-family: Roboto;
+        font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+
+
+        img{
+            width: 35px;
+            height: 28px;
+            margin-right: 10px;
+        }
+        span{
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+
+        }
+
+    }
+
+}
