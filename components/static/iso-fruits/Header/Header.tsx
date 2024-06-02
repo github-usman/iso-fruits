@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../../../assets/images/static/iso-fruits/header/logo.svg";
 import hamburger from "../../../../assets/images/static/iso-fruits/header/burger-menu-svgrepo-com.svg";
+import Link from "next/link";
 
 const Header = () => {
   const [isopen, setIsopen] = useState(false);
@@ -14,16 +15,30 @@ const Header = () => {
         objectPosition="center"
         className="iso-fruits-logo"
       />
-      <div className="navigation-links">
+     <div className="navigation-links">
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Vision and Mission</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li>
+              <Link href="/iso-fruits">Home</Link>
+            </li>
+            <li>
+              <Link href="/iso-fruits/product">Product</Link>
+            </li>
+            <li>
+              <Link href="/iso-fruits/b2b-solutions">B2B Solutions</Link>
+            </li>
+            <li>
+              <Link href="/iso-fruits/about-us">About Us</Link>
+            </li>
+            <li>
+              <Link href="/iso-fruits/contact-us">Contact Us</Link>
+            </li>
           </ul>
         </nav>
       </div>
+
+
+      {/* mobile view */}
       <div className="icons d-lg-none d-lg-block">
         {isopen ? (
           <span
@@ -48,9 +63,10 @@ const Header = () => {
       >
         <ul>
           <li>Home</li>
-          <li>Vision and Mission</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li>Product</li>
+          <li>B2B Solutions</li>
+          <li>About us</li>
+          <li>Contsct Us</li>
         </ul>
       </nav>
     </header>
