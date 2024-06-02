@@ -1,0 +1,90 @@
+
+
+.iso-fruits-product{
+    max-width: 930px;
+    width: 99%;
+    margin: 80px auto 95px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+    @include tablet{
+        gap: 30px;
+        margin: 40px auto 40px auto;
+
+    }
+    .top-card, .bottom-card{
+        display: flex;
+        gap: 108px;
+
+        @include tablet{
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        img{
+            width: 437px;
+            height: 261px;
+            border-radius: 20px;
+            background-color: #E3DFCB;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            @include tablet{
+                max-width: 100%;
+                background-size:contain;
+                background-position: center;
+
+            }
+
+            @include mobile{
+                height: 200px; 
+            }
+        }
+        div{
+            h2{
+                font-family: Roboto;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 45.34px;
+                text-align: left;
+                color: #BFB806;
+
+                @include tablet{
+                    font-size: 25px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    
+                }
+            }
+            p{
+                font-family: Roboto;
+                font-size: 23px;
+                font-weight: 400;
+                line-height: 23.59px;
+                text-align: left;
+                color: #001B78;
+                @include tablet{
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+                span{
+                    font-weight: 700;
+                    @include tablet{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-card{
+        flex-direction: row-reverse;
+        gap: 82px;
+        @include tablet{
+            flex-direction: column;
+            gap: 10px;
+         
+        }
+    }
+
+}
