@@ -82,12 +82,10 @@
             gap: calc(60% - 2rem);
             .fruits-logo{
                 position: fixed;
-                left: calc(60vw - 8rem);
                 z-index: 999;
-                @media screen and (max-width: 700px) {
-                    left: calc(60vw - 6rem);
-                }
+                display: none;
                 @include mobile{
+                    display: block;
                     left: 2px;
                 }
             }
@@ -141,6 +139,12 @@
                 font-weight: 500;
                 font-family: Roboto;
                 color: #001B78;
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    list-style: none;
+                    color: inherit;
+                  }
             }
         }
     }
