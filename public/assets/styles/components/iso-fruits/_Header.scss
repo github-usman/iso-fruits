@@ -82,12 +82,10 @@
             gap: calc(60% - 2rem);
             .fruits-logo{
                 position: fixed;
-                left: calc(60vw - 8rem);
                 z-index: 999;
-                @media screen and (max-width: 700px) {
-                    left: calc(60vw - 6rem);
-                }
+                display: none;
                 @include mobile{
+                    display: block;
                     left: 2px;
                 }
             }
