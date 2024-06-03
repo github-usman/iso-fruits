@@ -15,7 +15,7 @@ const Header = () => {
         objectPosition="center"
         className="iso-fruits-logo"
       />
-     <div className="navigation-links">
+      <div className="navigation-links">
         <nav>
           <ul>
             <li>
@@ -37,16 +37,23 @@ const Header = () => {
         </nav>
       </div>
 
-
       {/* mobile view */}
-      <div className="icons d-lg-none d-lg-block">
+      <div className="icons position-relative d-lg-none d-lg-block">
         {isopen ? (
-          <span
-            className="close"
-            onClick={() => setIsopen(!isopen)}
-          >
-            &times;
-          </span>
+          <div className="nav-head position-absolute">
+            <Image
+              src={logo}
+              alt="iso Fruits"
+              objectFit="cover"
+              objectPosition="center"
+              width={222}
+              height={88}
+              className="fruits-logo"
+            />
+            <span className="close" onClick={() => setIsopen(!isopen)}>
+              &times;
+            </span>
+          </div>
         ) : (
           <div
             onClick={() => {
@@ -66,7 +73,7 @@ const Header = () => {
           <li>Product</li>
           <li>B2B Solutions</li>
           <li>About us</li>
-          <li>Contsct Us</li>
+          <li>Contact Us</li>
         </ul>
       </nav>
     </header>
