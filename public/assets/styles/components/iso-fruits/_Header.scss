@@ -139,6 +139,12 @@
                 font-weight: 500;
                 font-family: Roboto;
                 color: #001B78;
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    list-style: none;
+                    color: inherit;
+                  }
             }
         }
     }

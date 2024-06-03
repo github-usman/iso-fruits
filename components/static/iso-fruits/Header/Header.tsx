@@ -69,11 +69,11 @@ const Header = () => {
         style={isopen ? { right: "0px" } : { right: "-100%" }}
       >
         <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>B2B Solutions</li>
-          <li>About us</li>
-          <li>Contact Us</li>
+          <li><Link href="/iso-fruits">Home</Link></li>
+          <li><Link href="/iso-fruits/product">Product</Link></li>
+          <li><Link href="/iso-fruits/b2b-solutions">B2B Solutions</Link></li>
+          <li><Link href="/iso-fruits/about-us">About Us</Link></li>
+          <li><Link href="/iso-fruits/contact-us">Contact Us</Link></li>
         </ul>
       </nav>
     </header>
