@@ -11,19 +11,33 @@
         text-align: center;
         color: #001B78;
         margin-bottom: 47px;
+        @include tablet{
+            font-size: 25px;
+
+        }
+        @include mobile{
+            font-size: 20px;
+            line-height: 25px;
+        }
+
     }
     .email-container,.call-container{
     
         display: flex;
         justify-content: center;
-        text-transform: capitalize;
         color: #001B78;
         font-family: Roboto;
         font-size: 30px;
-            font-weight: 400;
-            line-height: 30px;
-            letter-spacing: 0.20000000298023224px;
-            text-align: center;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+
+            @media screen and (max-width:600px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
 
 
         img{
@@ -38,7 +52,21 @@
             line-height: 30px;
             letter-spacing: 0.20000000298023224px;
             text-align: center;
+            text-transform: capitalize;
+            @include tablet{
+                font-size: 25px;
+    
+            }
+            @include mobile{
+                font-size: 20px;
+                line-height: 25px;
+            }
 
+        }
+        p{
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
     }
