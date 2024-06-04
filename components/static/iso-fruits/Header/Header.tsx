@@ -46,8 +46,8 @@ const Header = () => {
               alt="iso Fruits"
               objectFit="cover"
               objectPosition="center"
-              width={222}
-              height={88}
+              width={151}
+              height={60}
               className="fruits-logo"
             />
             <span className="close" onClick={() => setIsopen(!isopen)}>
