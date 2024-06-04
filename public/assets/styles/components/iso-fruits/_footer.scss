@@ -152,7 +152,7 @@
 
             @include flex(space-between,center,row);
 
-            @include mobile{
+            @include tablet{
                 flex-direction: column-reverse;
                 gap: 1rem;
                 padding: 1rem 0.5rem;
