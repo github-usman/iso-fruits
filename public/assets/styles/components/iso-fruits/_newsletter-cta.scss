@@ -17,8 +17,30 @@
             width: 90%;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: stretch;
             gap: 1rem;
+        }
+
+        h3{
+            display: none;
+
+            font-family: Nunito;
+            font-size: 21px;
+            font-weight: 800;
+            line-height: 23.21px;
+            text-align: left;
+
+            color: #001B78;
+            text-align: center;
+
+            span{
+                color : #F79428;
+            }
+
+
+            @include tablet{
+                display: block;
+            }
         }
 
         input{
@@ -48,12 +70,19 @@
                 letter-spacing: 0.20000000298023224px;
                 text-align: left;
                 color: #737373;
+
+                @include tablet{
+                    font-size: 14px;
+                }
             }
 
             @include tablet{
                 width: 100%;
-                border-radius: 5px;
+                padding: 0.25rem 0.75rem;
+
+                font-size: 14px;
             }
+
         }
         button{
             width: fit-content;
@@ -77,6 +106,7 @@
             text-align: center;
 
             @include tablet{
+                width: 100%;
                 border-radius: 5px;
                 padding: 0.25rem 1.75rem;
             }

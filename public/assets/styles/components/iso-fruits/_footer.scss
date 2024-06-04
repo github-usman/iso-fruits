@@ -76,6 +76,10 @@
                     @include flex(start,center,column);
                     gap: 0.5rem;
 
+                    @include tablet{
+                        align-items: flex-start
+                    }
+
                     .socials{
                         @include flex(start,start,row);
                         gap: 1.5rem;
@@ -128,14 +132,13 @@
             line-height: 22px;
             text-align: center;
             color: #1C4670;
+            @include mobile{
+                margin: 0 auto;
+                width: 60%;
+            }
         }
         @include tablet{
-            padding: 1.25rem 0.25rem;
-
-        }
-        @include mobile{
             padding: 1rem 0.25rem;
-
         }
     }
 
@@ -161,7 +164,7 @@
                 border: none;
                 border-radius: 13px;
                 @include mobile{
-                    border-radius: 10px;
+                    border-radius: 6px;
                 }
             }
 
@@ -183,7 +186,8 @@
                     text-transform: capitalize;
                     color: white;
                     @include mobile{
-                        padding: 0.5rem 1.75rem;
+                        border-radius: 5px;
+                        padding: 0.25rem 3.75rem;
                     }
                 }
                
@@ -202,7 +206,8 @@
                 text-transform: uppercase;
 
                 padding: 1rem 1.75rem;
-                @include mobile{
+                @include tablet{
+                    display: none;
                     border-radius: 10px;
                     padding: 0.5rem 1.75rem;
                 }

@@ -6,22 +6,27 @@
     
     .container{
 
-        .golden-banana-img{
-            max-width: 534px;
-            width: 100% ;
-            height: auto;    
-        }
-
+        
         @include flex(center, center, column);
         gap: 4rem;
         @include tablet{
-            gap: 0rem;
+            gap: 1rem;
         }
         
         max-width: 1080px;
         margin: 0 auto;
         position: relative;
+        
+        .golden-banana-img{
+            max-width: 534px;
+            width: 100% ;
+            height: auto;
 
+            @include tablet{
+                margin-bottom: 1rem;
+                width: 70%;
+            }
+        }
         .heading{
             width: fit-content;
             font-family: Roboto;
@@ -44,10 +49,15 @@
                 margin: 0;
             }
             @include mobile{
-                 padding: 0.5rem 1.5rem;
-                font-size: 28px;
-                line-height: 28px;
-                font-weight: 700;
+                font-family: Nunito;
+                font-size: 22px;
+                font-weight: 900;
+                line-height: 24px;
+                text-align: center;
+
+                padding: 0.25rem 1.5rem;
+
+                border-radius: 10px;
             }
         }
 
@@ -71,6 +81,8 @@
                 width: 100%;
                 padding: 0;
 
+                font-size: 17px;
+                line-height: 28px;
             }
 
         }
@@ -83,6 +95,12 @@
             .banana-img{
                 max-width: 95%;
                 height: auto;
+
+                @include tablet{
+                    transform: rotateY(180deg);
+                    padding: 0 3rem;
+                    padding-top: 2.5rem;
+                }
             }
             
             position: relative;
@@ -92,6 +110,18 @@
                 top: 10%;
                 @include tablet{
                     display: none;
+                }
+            }
+
+            .triangle1Mobile-img{
+                position: absolute;
+                right: 2%;
+                top: -10%;
+
+                display: none;
+
+                @include tablet{
+                    display: block;
                 }
             }
         }
@@ -104,10 +134,22 @@
             top: 30%;
             left: 0;
 
-
-
             @include tablet{
                 display: none;
+            }
+        }
+
+        .triangle2Mobile-img{
+            transform: translateY(-30%) rotate(36deg) scale(0.95);
+
+            position: absolute;
+            top: 25%;
+            left: 0;
+
+            display: none;
+
+            @include tablet{
+                display: block;
             }
         }
     }

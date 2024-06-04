@@ -28,13 +28,13 @@ const FooterTop = () => {
 
           <div className="socials-container">
             <div className="socials">
-              <a href='https://www.facebook.com/' target='_blank' rel='noreferrer noopener'>
+              <a href='https://www.facebook.com/isofruits' target='_blank' rel='noreferrer noopener'>
                 <Image src={facebook} alt='fb-logo' />
               </a>
-              <a href='https://www.linkedin.com/' target='_blank' rel='noreferrer noopener'>
+              <a href='https://www.linkedin.com/company/iso-fruits' target='_blank' rel='noreferrer noopener'>
                 <Image src={linkedin} alt='linkedin-logo'/>
               </a>
-              <a href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'>
+              <a href='https://www.instagram.com/isofruits7?igsh=MWg2dTl1eWl6MGgzOA==' target='_blank' rel='noreferrer noopener'>
                 <Image src={instagram} alt='insta-log'/>
               </a>
               <a href='https://www.twitter.com/' target='_blank' rel='noreferrer noopener'>
@@ -42,7 +42,7 @@ const FooterTop = () => {
               </a>
             </div>
 
-            <p>Social app</p>
+            <p>Follow Us</p>
 
           </div>
 
