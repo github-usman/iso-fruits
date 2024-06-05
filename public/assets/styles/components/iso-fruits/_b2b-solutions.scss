@@ -6,7 +6,7 @@
     
     @include tablet{
         margin: 40px auto 40px auto;
-
+        padding: 0 10px;
     }
 
     p{
@@ -21,12 +21,9 @@
             width: 99%;
             margin-left: auto;
             margin-right: auto;
-            font-size: 20px;
-            line-height: 22px;
-            
-        }
-        @include mobile{
-            text-align: center;
+
+            font-size: 16px;
+            line-height: 28px;
         }
         span{
             font-family: Roboto;
@@ -41,5 +38,13 @@
             }
         }
 
+        .subheading-span{
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+    }
+    .email{
+        text-transform: none;
     }
 }

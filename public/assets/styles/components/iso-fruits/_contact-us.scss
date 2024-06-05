@@ -3,6 +3,11 @@
     width: 99%;
     margin: 148px auto 169px auto;
 
+    @include tablet{
+        margin: 1.75rem auto;
+        padding: 0 20px;
+    }
+
     h5{
         font-family: Roboto;
         font-size: 31px;
@@ -11,13 +16,12 @@
         text-align: center;
         color: #001B78;
         margin-bottom: 47px;
+        text-transform: capitalize;
         @include tablet{
-            font-size: 25px;
+            font-size: 20.8px;
+            font-weight: 500;
+            line-height: 28px;
 
-        }
-        @include mobile{
-            font-size: 20px;
-            line-height: 25px;
         }
 
     }
@@ -44,6 +48,11 @@
             width: 35px;
             height: 28px;
             margin-right: 10px;
+
+            @include tablet{
+                width: 55px;
+                height: auto;
+            }
         }
         span{
             font-family: Roboto;
