@@ -8,25 +8,26 @@
     background: radial-gradient(circle at 50% 70%, #ffc89b 0%, #ffeea154 30%, #ffff 80%);
 
     @include mobile{
-      background: radial-gradient(circle at 30% 70%, #FFC89B 0%, #ffeea154 40%, #ffff 50%);
+      padding-top: 0;
+      background: radial-gradient(circle at 50% 70%, #FFC89B 0%, #ffeea154 40%, #ffff 50%);
     }
     
     h1{
-      font-family: Roboto;
-      font-size: 46px;
-      font-weight: 700;
+      font-family: Nunito;
+      font-size: 49px;
+      font-weight: 800;
       line-height: 50px;
       letter-spacing: 0.20000000298023224px;
       text-align: center;
       color: #DF9235;
 
       span{
-        font-family: Roboto;
-        font-size: 46px;
-        font-weight: 700;
+        font-family: Nunito;
+        font-size: 49px;
+        font-weight: 800;
         line-height: 50px;
         letter-spacing: 0.20000000298023224px;
-        text-align: left;
+        text-align: center;
         color: #001B78;
 
       }

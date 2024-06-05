@@ -67,6 +67,12 @@
         width: 100%;
         height: 371px;
         padding-top: 97px;
+
+        @include tablet{
+            padding-top: 3rem;
+            height: fit-content;
+            padding-bottom: 30px;
+        }
         div{
             width: 868px;
             height: 273px;
@@ -79,6 +85,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include tablet{
+                width: 100%;
+                height: fit-content;
+                padding: 1rem;
+            }
             h2{
                 width: fit-content;
                 background-color: #E9BF38;
