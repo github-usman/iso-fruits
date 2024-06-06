@@ -3,9 +3,25 @@ import Image from "next/image";
 import logo from "../../../../assets/images/static/iso-fruits/header/logo.svg";
 import hamburger from "../../../../assets/images/static/iso-fruits/header/burger-menu-svgrepo-com.svg";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [isopen, setIsopen] = useState(false);
+  const router = useRouter();
+
+  const openHandler = () => {
+    setIsopen(true);
+  }
+  const closeHandler = () => {
+    setIsopen(false);
+  }
+
+  const handleNavigation = (path: string) => {
+    router.replace(path);
+    closeHandler();
+  }
+
+  
   return (
     <header className="Header">
       <Image
@@ -50,16 +66,12 @@ const Header = () => {
               height={60}
               className="fruits-logo"
             />
-            <span className="close" onClick={() => setIsopen(!isopen)}>
+            <span className="close" onClick={closeHandler}>
               &times;
             </span>
           </div>
         ) : (
-          <div
-            onClick={() => {
-              setIsopen(true);
-            }}
-          >
+          <div onClick={openHandler} >
             <Image src={hamburger} alt="Hamburger" className="hamburger" />
           </div>
         )}
@@ -69,11 +81,11 @@ const Header = () => {
         style={isopen ? { right: "0px" } : { right: "-100%" }}
       >
         <ul>
-          <li><Link href="/iso-fruits">Home</Link></li>
-          <li><Link href="/iso-fruits/product">Product</Link></li>
-          <li><Link href="/iso-fruits/b2b-solutions">B2B Solutions</Link></li>
-          <li><Link href="/iso-fruits/about-us">About Us</Link></li>
-          <li><Link href="/iso-fruits/contact-us">Contact Us</Link></li>
+          <li><button type="button" onClick={() => handleNavigation("/iso-fruits")}>Home</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/product")}>Product</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/b2b-solutions")}>B2B Solutions</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/about-us")}>About Us</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/contact-us")}>Contact Us</button></li>
         </ul>
       </nav>
     </header>
