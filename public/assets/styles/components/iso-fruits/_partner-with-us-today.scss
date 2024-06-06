@@ -1,0 +1,32 @@
+.iso-fruites-partner-with-us-today{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: calc(100vw - 55px);
+    margin: auto;
+    @include tablet{
+        height: 300px;
+    }
+    @include mobile{
+        height: auto;
+        margin: 20px auto;
+    }
+    p{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 38px;
+        text-align: center;
+        color: #001B78;
+        text-transform: capitalize;
+        @include tablet{
+            font-size: 20px;
+            line-height: 28px;
+            text-align: left;
+        }
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+}
