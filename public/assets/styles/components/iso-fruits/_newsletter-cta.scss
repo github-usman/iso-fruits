@@ -1,11 +1,36 @@
 
 
 .newsletter-cta{
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     width: 100%;
     background-color: white;
 
     max-width: 1080px;
     margin: 0 auto;
+
+    @include flex(start,center, column);
+    gap: 0;
+
+    h3{
+        font-family: Nunito;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 39.78px;
+        color: #001B78;
+        text-align: center;
+        @include tablet{
+            font-size: 21px;
+            line-height: 23.21px;
+        }
+        span{
+            color : #F79428;
+        }
+    }
 
     div{
         @include flex();
@@ -21,27 +46,7 @@
             gap: 1rem;
         }
 
-        h3{
-            display: none;
-
-            font-family: Nunito;
-            font-size: 21px;
-            font-weight: 800;
-            line-height: 23.21px;
-            text-align: left;
-
-            color: #001B78;
-            text-align: center;
-
-            span{
-                color : #F79428;
-            }
-
-
-            @include tablet{
-                display: block;
-            }
-        }
+        
 
         input{
             width: 100%;
