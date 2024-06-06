@@ -39,7 +39,7 @@
                 li {
                     padding: 5px 0px;
                     line-height: 32.59px;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 500;
                     font-family: Roboto;
                     color: #001B78;
@@ -140,12 +140,16 @@
                 font-weight: 500;
                 font-family: Roboto;
                 color: #001B78;
-                a {
+                button {
+                    appearance: none;
+                    border: none;
+                    outline: none;
+                    background: transparent;
                     cursor: pointer;
                     text-decoration: none;
                     list-style: none;
                     color: inherit;
-                  }
+                }
             }
         }
     }

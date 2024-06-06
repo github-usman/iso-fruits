@@ -11,10 +11,16 @@
     background-color: white;
 
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 2rem auto;
 
     @include flex(start,center, column);
-    gap: 0;
+    gap: 2rem;
+    @include tablet{
+        gap: 1.5rem;
+    }
+    @include mobile{
+        gap: 1rem;
+    }
 
     h3{
         font-family: Nunito;
@@ -36,7 +42,6 @@
         @include flex();
 
         width: 60%;
-        margin: 3.25rem auto;
 
         @include tablet{
             width: 90%;
