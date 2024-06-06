@@ -23,9 +23,9 @@ const Home: React.FC = () => {
 
           <p><span>Contact Our B2B Team</span></p>
 
-          <p className="email"><span className="subheading-span">Email:</span> email@gmail.com </p>
+          <p className="contacts"><span className="subheading-span">Email:</span> email@gmail.com </p>
 
-         <p><span className="subheading-span">Phone:</span> +919872461839</p>
+         <p className="contacts"><span className="subheading-span">Phone:</span> +919872461839</p>
       </div>
     );
   };
