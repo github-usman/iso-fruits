@@ -70,7 +70,7 @@
         }
 
         .description{
-            @include flex(center, center, row);
+            @include flex(center, flex-start, row);
             div{
                 width: 60%;
                 @include tablet{
