@@ -1,10 +1,9 @@
 .iso-fruites-partner-with-us-today{
+    max-width: 980px;
+    margin: 105px auto 151px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: calc(100vw - 55px);
-    margin: auto;
     @include tablet{
         height: 300px;
     }
@@ -23,7 +22,7 @@
         @include tablet{
             font-size: 20px;
             line-height: 28px;
-            text-align: left;
+            text-align: center;
         }
         @include mobile{
             font-size: 16px;

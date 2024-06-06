@@ -20,7 +20,7 @@ const FooterTop = () => {
             </div>
             <div className='links'>
               <Link href='/iso-fruits/product'>Product</Link>
-              <Link href='/iso-fruits/b2b-solutions'>Partner with Us Today</Link>
+              <Link href='/iso-fruits/partner-with-us-today'>Partner with Us Today</Link>
               <Link href='/iso-fruits/about-us'>About us</Link>
               <Link href='/iso-fruits/contact-us'>Contact Us</Link>
             </div>
