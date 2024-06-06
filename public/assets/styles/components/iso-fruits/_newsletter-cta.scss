@@ -14,7 +14,13 @@
     margin: 2rem auto;
 
     @include flex(start,center, column);
-    gap: 1rem;
+    gap: 2rem;
+    @include tablet{
+        gap: 1.5rem;
+    }
+    @include mobile{
+        gap: 1rem;
+    }
 
     h3{
         font-family: Nunito;

@@ -21,6 +21,11 @@
       text-align: center;
       color: #DF9235;
 
+      width: fit-content;
+      margin: 0 auto;
+
+      text-wrap: nowrap;
+      border-bottom: 1px solid #737373;
       span{
         font-family: Nunito;
         font-size: 49px;
@@ -32,6 +37,23 @@
 
       }
 
+      @include tablet{
+        font-size: 28px;
+        line-height: 36px;  
+        span{
+          font-size: 28px;
+          line-height: 36px;
+        }
+      }
+
+      @include mobile{
+        font-size: 20px;
+        line-height: 24px;
+        span{
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
     }
     // all card height
     .slick-list {
