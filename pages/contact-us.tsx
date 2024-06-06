@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import call from "../../assets/images/static/iso-fruits/contact-us/call.svg"
-import email from "../../assets/images/static/iso-fruits/contact-us/email.svg"
+import call from "../assets/images/static/iso-fruits/contact-us/call.svg"
+import email from "../assets/images/static/iso-fruits/contact-us/email.svg"
 const Home: React.FC = () => {
     return (
       <div className="iso-fruites-contact-us">
