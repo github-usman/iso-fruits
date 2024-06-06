@@ -35,19 +35,19 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/iso-fruits">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/iso-fruits/product">Product</Link>
+              <Link href="/product">Product</Link>
             </li>
             <li>
-              <Link href="/iso-fruits/b2b-solutions">B2B Solutions</Link>
+              <Link href="/b2b-solutions">B2B Solutions</Link>
             </li>
             <li>
-              <Link href="/iso-fruits/about-us">About Us</Link>
+              <Link href="/about-us">About Us</Link>
             </li>
             <li>
-              <Link href="/iso-fruits/contact-us">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </nav>
@@ -81,11 +81,11 @@ const Header = () => {
         style={isopen ? { right: "0px" } : { right: "-100%" }}
       >
         <ul>
-          <li><button type="button" onClick={() => handleNavigation("/iso-fruits")}>Home</button></li>
-          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/product")}>Product</button></li>
-          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/b2b-solutions")}>B2B Solutions</button></li>
-          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/about-us")}>About Us</button></li>
-          <li><button type="button" onClick={() => handleNavigation("/iso-fruits/contact-us")}>Contact Us</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/")}>Home</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/product")}>Product</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/b2b-solutions")}>B2B Solutions</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/about-us")}>About Us</button></li>
+          <li><button type="button" onClick={() => handleNavigation("/contact-us")}>Contact Us</button></li>
         </ul>
       </nav>
     </header>
