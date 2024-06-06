@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from '../../../../assets/images/static/iso-fruits/Footer/logo.svg'
-import whatsapp from '../../../../assets/images/static/iso-fruits/Footer/whatsapp.svg'
 import facebook from '../../../../assets/images/static/iso-fruits/Footer/facebook.svg'
 import linkedin from '../../../../assets/images/static/iso-fruits/Footer/linkedin.svg'
 import twitter from '../../../../assets/images/static/iso-fruits/Footer/twitter.svg'
@@ -29,9 +28,6 @@ const FooterTop = () => {
 
           <div className="socials-container">
             <div className="socials">
-              <a href='https://wa.me/9873461839?text=Hello!' target='_blank' rel='noreferrer noopener'>
-                <Image src={whatsapp} alt='fb-logo' className='social-logo' />
-              </a>
               <a href='https://www.facebook.com/isofruits' target='_blank' rel='noreferrer noopener'>
                 <Image src={facebook} alt='fb-logo' className='social-logo' />
               </a>
