@@ -2,6 +2,12 @@
     background: #fff;
     padding-top: 0;
     position: relative;
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     
     
     .container{
@@ -21,8 +27,10 @@
             max-width: 534px;
             width: 100% ;
             height: auto;
+            display: none;
 
             @include tablet{
+                display: block;
                 margin-bottom: 1rem;
                 width: 70%;
             }
@@ -62,29 +70,43 @@
         }
 
         .description{
-            @include flex(center, center, column);
-            p{
-                max-width: 996px;
-                font-family: Roboto;
-                font-size: 32px;
-                font-weight: 400;
-                line-height: 48px;
-                text-align: center;
-                
-                padding: 0 2rem;
-                text-transform: capitalize;
-    
-                color: #001B78;
-    
+            @include flex(center, flex-start, row);
+            div{
+                width: 60%;
                 @include tablet{
-                    margin-top: 1.5rem;
-                    font-size: 18px;
-                    line-height: 32px;
                     width: 100%;
-                    padding: 0;
-    
-                    font-size: 17px;
-                    line-height: 28px;
+                }
+                p{
+                    max-width: 996px;
+                    font-family: Roboto;
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 34px;
+                    
+                    padding: 0 2rem;
+                    text-transform: capitalize;
+        
+                    color: #001B78;
+        
+                    @include tablet{
+                        margin: 0 auto;
+                        margin-top: 1.5rem;
+                        font-size: 18px;
+                        line-height: 32px;
+                        width: 95%;
+                        padding: 0;
+                        text-align: center;
+        
+                        font-size: 17px;
+                        line-height: 28px;
+                    }
+                }
+            }
+            img{
+                max-width: 40%;
+                height: auto;
+                @include tablet{
+                    display: none;
                 }
             }
 
@@ -116,53 +138,7 @@
             }
             
             position: relative;
-            .triangle1-img{
-                position: absolute;
-                right: 0;
-                top: 20%;
-                @include tablet{
-                    display: none;
-                }
-            }
-
-            .triangle1Mobile-img{
-                position: absolute;
-                right: 0;
-                top: -15%;
-
-                display: none;
-
-                @include tablet{
-                    display: block;
-                }
-            }
-        }
-
-          
-        .triangle2-img{
-            transform: translateY(-65%) rotate(36deg) scale(0.95);
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            @include tablet{
-                display: none;
-            }
-        }
-
-        .triangle2Mobile-img{
-            transform: translateY(-100%) rotate(36deg) scale(0.95);
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            display: none;
-
-            @include tablet{
-                display: block;
-            }
+            
         }
     }
 }
