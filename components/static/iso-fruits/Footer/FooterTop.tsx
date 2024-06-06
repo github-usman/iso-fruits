@@ -19,10 +19,10 @@ const FooterTop = () => {
               <Image src={logo} alt='iso-logo' loading='lazy'/>
             </div>
             <div className='links'>
-              <Link href='/'>Banana Product</Link>
-              <Link href='/'>Partner with Us Today</Link>
-              <Link href='/'>About us</Link>
-              <Link href='/'>Contact Us</Link>
+              <Link href='/iso-fruits/product'>Product</Link>
+              <Link href='/iso-fruits/b2b-solutions'>Partner with Us Today</Link>
+              <Link href='/iso-fruits/about-us'>About us</Link>
+              <Link href='/iso-fruits/contact-us'>Contact Us</Link>
             </div>
           </div>
 

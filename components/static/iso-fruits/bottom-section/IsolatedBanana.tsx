@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import banana from '../../../../assets/images/static/iso-fruits/bottom-section/isolatedBanana.png'
-import triangle from '../../../../assets/images/static/iso-fruits/bottom-section/triangleGradient.png'
-import triangleMobile from '../../../../assets/images/static/iso-fruits/bottom-section/triangleMobile.png'
 import golden_isolated_banana from '../../../../assets/images/static/iso-fruits/bottom-section/golden_isolated_banana.svg'
 import golden_banana_desktop from '../../../../assets/images/static/iso-fruits/bottom-section/golden-banana-desktop.png'
 
