@@ -27,3 +27,26 @@
     }
 }
 
+
+/* scrollbar */
+
+
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1c467000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #F8BE21;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #214A73;
+}
+
+
