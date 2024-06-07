@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-.Hero {
+.iso-fruits-Hero {
   .hero-top {
     position: relative;
     width: 100%;
@@ -259,4 +259,55 @@
             }
         }
     }
+
+//   skeleton
+position: relative;
+.SkeletonImage{
+    height: 459px;
+    width: 790px;
+    width: 100%;
+    background-color: #f1f3e7; 
+    animation: glow 2s infinite;
+    overflow: hidden;
+   
+}
+
+@media screen and (max-width: 990px){
+    .SkeletonImage{
+        height: 390px;
+    }
+}
+@media screen and (max-width :700px) {
+    .SkeletonImage{
+        height: 365px; 
+    }
+}
+@media screen and (max-width: 550px){
+    .SkeletonImage{
+        height: 202px;
+    }
+}
+
+.SkeletonImage::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(225, 243, 143, 0) 0%, rgba(225, 243, 143, 0.8) 50%, rgba(225, 243, 143, 0) 100%);
+    animation: wave 0.5s infinite;
+
+   
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
 }
