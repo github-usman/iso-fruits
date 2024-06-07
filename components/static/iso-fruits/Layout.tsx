@@ -11,22 +11,6 @@ interface LayoutProps {
   
   const Layout: React.FC<LayoutProps> = ({ children }) => {
 
-    const [showText, setShowText] = useState(false);
-
-    const handleMouseEnter = () => {
-      setShowText(true);
-    };
-  
-    const handleScroll = () => {
-      setShowText(false);
-    };
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
     
     return (
       <div>
@@ -35,16 +19,12 @@ interface LayoutProps {
         <main className='main-conatiner-iso-fruits'>
           {children}
           <button className='whatsapp-btn'>
-            <a href='https://wa.me/9873461839' target='_blank' rel='noreferrer noopener'
-              onMouseEnter={handleMouseEnter}
-            >
+            <a href='https://wa.me/9873461839' target='_blank' rel='noreferrer noopener'>
               <Image src={whatsapp} alt='whatsapp-logo' />
-              {
-                showText && <p className={showText ? 'visible-text' : 'hidden-text'}>WhatsApp us</p>
-              }
             </a>
           </button>
         </main>
+
         <Footer />
       </div>
     );
