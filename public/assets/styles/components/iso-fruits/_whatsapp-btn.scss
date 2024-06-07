@@ -43,9 +43,17 @@
         }
 
         img{
-            height: 20px;
-            width: 20px;
+            height: 32px;
+            width: 32px;
             aspect-ratio: 1/1;
+            @include tablet{
+                height: 28px;
+                width: 28px;
+            }
+            @include mobile{
+                height: 24px;
+                width: 24px;
+            }
         }
         p{
             margin: 0;
