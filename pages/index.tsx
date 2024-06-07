@@ -6,16 +6,31 @@ import NewsLetterCTA from "../components/static/iso-fruits/bottom-section/NewsLe
 import Carousel from "../components/static/iso-fruits/carousel/Carousel";
 
 const Home: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const [firstVisit, setFirstVisit] = useState(false);
 
-    useEffect(() => {
-      const timer = setTimeout(() => {
+  useEffect(() => {
+    // Ensure this code runs only on the client side
+    const isClient = typeof window !== 'undefined';
+
+    if (isClient) {
+      const visitStatus = !sessionStorage.getItem('visited');
+      setFirstVisit(visitStatus);
+
+      if (visitStatus) {
+        const timer = setTimeout(() => {
+          setIsLoading(false);
+          sessionStorage.setItem('visited', 'true');
+        }, 3000);
+
+        // Cleanup the timer on component unmount
+        return () => clearTimeout(timer);
+      } else {
+        // If it's not the first visit, immediately set loading to false
         setIsLoading(false);
-      }, 3000);
-
-      // Cleanup the timer on component unmount
-      return () => clearTimeout(timer);
-    }, []);
+      }
+    }
+  }, []);
     return (
       <>
         <Hero isLoading={isLoading}/>
