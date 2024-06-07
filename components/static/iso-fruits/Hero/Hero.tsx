@@ -1,8 +1,16 @@
 import React from "react";
+import HeroSkeleton from "./heroSkeleton";
 
-const Hero = () => {
+interface HeroProps {
+  isLoading: boolean;
+}
+
+const Hero: React.FC<HeroProps> = ({ isLoading }) => {
+  if (isLoading) {
+    return <HeroSkeleton />;
+  }
   return (
-    <div className="Hero">
+    <div className="iso-fruits-Hero ">
       <div className="hero-top">
         <div className="background"></div>
         <div className="foreground">
